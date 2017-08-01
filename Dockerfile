@@ -37,7 +37,7 @@ WORKDIR /tmp
 RUN wget -q https://github.com/redpen-cc/redpen/releases/download/redpen-1.9.0/redpen-1.9.0.tar.gz -O - | tar xz \
     && cp -av redpen-distribution-1.9.0/* /usr/local/ \
     && rm -rf redpen-distribution-1.9.0 \
-    && wget -q http://cdn.cognitect.com/clojure.org/jbake-2.5.0-SNAPSHOT-bin.zip -0 jbake.zip \
+    && wget -q http://cdn.cognitect.com/clojure.org/jbake-2.5.0-SNAPSHOT-bin.zip -O jbake.zip \
     && unzip -o jbake.zip \
     && cp -av jbake-2.5.0-SNAPSHOT/* /usr/local/ \
     && rm -rf jbake-2.5.0-SNAPSHOT
